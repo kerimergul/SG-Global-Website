@@ -1,0 +1,10 @@
+# SPA yönlendirme — React Router (BrowserRouter) için
+# Apache / cPanel paylaşımlı hosting'de derin bağlantıların yenilenmesinde 404 önler
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

@@ -1,0 +1,238 @@
+/* ============================================================
+   SG Global — Global Stiller & Tasarım Sistemi
+   ============================================================ */
+
+:root {
+  /* Renk paleti — açık & ferah kurumsal mavi (S&G Global logo mavisinden) */
+  --navy-900: #1B4A66;
+  --navy-800: #225C7E;
+  --navy-700: #2E6E92;
+  --blue-600: #2F7FA8;
+  --blue-500: #4E97BE;
+  --blue-100: #E7F1F7;
+  /* Vurgu — parlak gök mavisi */
+  --gold-500: #5AAAD6;
+  --gold-400: #8CCBEC;
+
+  --ink-900: #161B20;
+  --ink-700: #303A43;
+  --ink-500: #5E6B76;
+  --ink-300: #9AA6B0;
+
+  --line: #E4EAEF;
+  --surface: #FFFFFF;
+  --surface-soft: #F4F7FA;
+  --surface-tint: #EDF3F8;
+
+  /* Tipografi */
+  --font-head: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  /* Yapı */
+  --container: 1180px;
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 2px 8px rgba(10, 37, 64, 0.06);
+  --shadow: 0 12px 30px rgba(10, 37, 64, 0.10);
+  --shadow-lg: 0 24px 60px rgba(10, 37, 64, 0.16);
+
+  --gradient-brand: linear-gradient(135deg, #4E97BE 0%, #225C7E 100%);
+  --gradient-hero: radial-gradient(1200px 600px at 80% -10%, rgba(140, 203, 236, 0.45), transparent 60%),
+                   linear-gradient(160deg, #285F80 0%, #1B4A66 100%);
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 104px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink-700);
+  background: var(--surface);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-head);
+  color: var(--ink-900);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+section {
+  position: relative;
+}
+
+/* ---------- Yardımcı sınıflar ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 96px 0;
+}
+
+.section--soft {
+  background: var(--surface-soft);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue-600);
+}
+
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 2px;
+  background: var(--gold-500);
+  border-radius: 2px;
+}
+
+.section-head {
+  max-width: 680px;
+  margin-bottom: 56px;
+}
+
+.section-head--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: clamp(1.85rem, 3.6vw, 2.6rem);
+  margin: 16px 0 14px;
+}
+
+.section-sub {
+  font-size: 1.08rem;
+  color: var(--ink-500);
+}
+
+/* ---------- Butonlar ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.98rem;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease);
+  white-space: nowrap;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.btn--primary {
+  background: var(--gradient-brand);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(60, 124, 156, 0.35);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(60, 124, 156, 0.45);
+}
+
+.btn--gold {
+  background: linear-gradient(135deg, var(--gold-400), var(--gold-500));
+  color: #0E2430;
+  box-shadow: 0 10px 24px rgba(90, 170, 214, 0.45);
+}
+
+.btn--gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(90, 170, 214, 0.55);
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--blue-600);
+  border: 1.5px solid var(--line);
+}
+
+.btn--outline:hover {
+  border-color: var(--blue-600);
+  background: var(--blue-100);
+}
+
+/* ---------- Giriş animasyonu ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .section { padding: 68px 0; }
+  .section-head { margin-bottom: 40px; }
+}

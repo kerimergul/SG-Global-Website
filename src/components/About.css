@@ -1,0 +1,115 @@
+.about__inner {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 56px;
+  align-items: center;
+}
+
+/* Sol görsel panel */
+.about__panel {
+  background: var(--gradient-hero);
+  border-radius: var(--radius-lg);
+  padding: 38px 32px;
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.about__panel::before {
+  content: '';
+  position: absolute;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(90, 170, 214,0.25), transparent 70%);
+  top: -80px; right: -60px;
+}
+
+.about__panel-tag {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+  margin-bottom: 16px;
+}
+
+.about__quote {
+  position: relative;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.about__values {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.about__value {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 16px 12px;
+  text-align: center;
+}
+.about__value-ico {
+  display: grid;
+  place-items: center;
+  width: 40px; height: 40px;
+  margin: 0 auto 10px;
+  border-radius: 11px;
+  background: rgba(90, 170, 214, 0.16);
+  color: var(--gold-400);
+}
+.about__value strong { display: block; font-family: var(--font-head); font-size: 0.95rem; }
+.about__value em { font-style: normal; font-size: 0.76rem; color: rgba(255,255,255,0.66); }
+
+/* Sağ içerik */
+.about__content .section-title { margin-top: 14px; }
+.about__content > p {
+  color: var(--ink-500);
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.about__bullets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 22px;
+  margin: 24px 0 30px;
+}
+.about__bullets li {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 0.94rem;
+  color: var(--ink-700);
+  font-weight: 500;
+}
+.about__check {
+  display: grid;
+  place-items: center;
+  width: 22px; height: 22px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--blue-100);
+  color: var(--blue-600);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 920px) {
+  .about__inner { grid-template-columns: 1fr; gap: 44px; }
+  .about__visual { order: 2; }
+}
+@media (max-width: 480px) {
+  .about__bullets { grid-template-columns: 1fr; }
+  .about__values { grid-template-columns: 1fr; }
+}
