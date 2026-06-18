@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container footer__top">
         <div className="footer__brand">
           <p className="footer__brand-name">
-            S&amp;G <strong>Global</strong> <span>Consultancy</span>
+            S&amp;G GlobalConsultancy
           </p>
           <p>
             SGK ve istihdam teşvikleri, vergi danışmanlığı, devlet destek &amp; hibeleri
