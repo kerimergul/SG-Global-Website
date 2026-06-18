@@ -222,8 +222,8 @@
 .hero__chip strong { display: block; font-family: var(--font-head); font-size: 1rem; line-height: 1.1; }
 .hero__chip em { font-style: normal; font-size: 0.76rem; color: var(--ink-500); }
 
-.hero__chip--1 { top: 6%; right: -2%; }
-.hero__chip--2 { bottom: 8%; left: -4%; animation-delay: 1.2s; }
+.hero__chip--1 { top: -6%; left: -2%; }
+.hero__chip--2 { bottom: -6%; right: -4%; animation-delay: 1.2s; }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -237,12 +237,21 @@
   .hero__desc { max-width: none; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .hero { padding: 124px 0 76px; }
-  .hero__trust { flex-wrap: wrap; gap: 16px; }
-  .hero__trust-div { display: none; }
-  .hero__trust > div { min-width: 88px; }
-  .hero__chip--1 { right: 0; top: 0; }
-  .hero__chip--2 { left: 0; bottom: 0; }
+  /* İstatistikler tek satırda 3 eşit sütun; dikey ayraç çizgileri gizli.
+     (.hero__trust > div, ayraçları da hedeflediği için yüksek özgüllükle gizliyoruz) */
+  .hero__trust { flex-wrap: nowrap; gap: 8px; justify-content: space-between; align-items: flex-start; }
+  .hero__trust > .hero__trust-div { display: none; }
+  .hero__trust > div {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+    align-items: center;
+  }
+  .hero__trust strong { font-size: 1.3rem; }
+  .hero__trust span { font-size: 0.7rem; line-height: 1.25; }
+  .hero__chip--1 { left: 0; top: -2%; }
+  .hero__chip--2 { right: 0; bottom: -2%; }
   .hero__actions .btn { flex: 1; }
 }

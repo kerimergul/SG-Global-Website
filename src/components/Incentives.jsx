@@ -14,7 +14,7 @@ const incentiveTypes = [
 
 const steps = [
   { icon: IconSearch, title: 'Tespit', text: 'Tüm personel ve dönemler taranarak uygun teşvikler belirlenir.' },
-  { icon: IconChart, title: 'Hesaplama', text: 'Geriye dönük ve güncel hak edişleriniz net rakamlarla raporlanır.' },
+  { icon: IconChart, title: 'Hesaplama', text: 'Sağlanacak prim avantajı ve hak edişleriniz net rakamlarla raporlanır.' },
   { icon: IconDoc, title: 'Başvuru', text: 'Başvuru ve düzeltme bildirgeleri eksiksiz hazırlanıp sonuçlandırılır.' },
 ]
 
@@ -29,9 +29,9 @@ export default function Incentives() {
             SGK Teşviklerinde <span>uçtan uca</span> danışmanlık
           </h2>
           <p className="incentives__lead">
-            Yararlanmadığınız teşvikleri tespit ediyor, geriye dönük 6 aya kadar
-            hak edişlerinizi geri kazandırıyoruz. Tüm süreç uzman ekibimiz tarafından
-            mevzuata tam uyumla yönetilir.
+            İşletmenizin yararlanabileceği teşvikleri eksiksiz tespit ediyor, başvuru
+            ve uygulama süreçlerini uçtan uca yönetiyoruz. Tüm süreç uzman ekibimiz
+            tarafından mevzuata tam uyumla yürütülür.
           </p>
 
           <ul className="incentives__list">
@@ -53,8 +53,7 @@ export default function Incentives() {
             </div>
             <div className="incentives__metric">
               <span className="incentives__metric-label">Tespit edilen aylık avantaj</span>
-              <strong className="incentives__metric-value">₺ 184.500</strong>
-              <span className="incentives__metric-badge"><IconChart width={14} height={14} /> Geriye dönük dahil</span>
+              <strong className="incentives__metric-value">₺ 184.500</strong>              
             </div>
             <div className="incentives__steps">
               {steps.map((s, i) => {

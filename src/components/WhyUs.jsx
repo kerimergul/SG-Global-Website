@@ -5,7 +5,7 @@ import './WhyUs.css'
 const features = [
   { icon: IconShield, title: 'Tam Mevzuat Uyumu', text: 'Tüm süreçler güncel SGK mevzuatına %100 uyumlu yürütülür, ceza riski taşımaz.' },
   { icon: IconChart, title: 'Ölçülebilir Tasarruf', text: 'Sağladığımız avantajı net rakamlarla raporlar, somut tasarruf sunarız.' },
-  { icon: IconClock, title: 'Hızlı Sonuç', text: 'Geriye dönük teşvik tespiti ve başvurularını en kısa sürede sonuçlandırırız.' },
+  { icon: IconClock, title: 'Hızlı Sonuç', text: 'Teşvik tespiti ve başvuru süreçlerini en kısa sürede sonuçlandırırız.' },
   { icon: IconUsers, title: 'Uzman Kadro', text: 'SGK, bordro ve mevzuat alanında deneyimli uzmanlardan oluşan ekip.' },
   { icon: IconLayers, title: 'Entegre Çözüm', text: 'SGK, vergi, teşvik ve eğitimi tek çatı altında birleştiren bütünleşik yaklaşım.' },
   { icon: IconHandshake, title: 'Şeffaf İş Birliği', text: 'Gizlilik esaslı, raporlanabilir ve uzun vadeli çözüm ortaklığı.' },

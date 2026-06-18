@@ -12,9 +12,9 @@ export const services = [
     summary:
       'SGK istihdam teşviklerinden eksiksiz yararlanmanızı sağlar, sosyal güvenlik ve iş hukuku süreçlerinizi uçtan uca yönetiriz.',
     intro:
-      'Maliye ve SGK mevzuatına hakim uzman kadromuzla; istihdam teşviklerinin tespiti, başvurusu ve takibinden iş hukuku müşavirliğine kadar tüm sosyal güvenlik süreçlerinizde yanınızdayız. Geriye dönük teşvik haklarınızı analiz eder, prim maliyetlerinizi yasal çerçevede en aza indiririz.',
+      'Maliye ve SGK mevzuatına hakim uzman kadromuzla; istihdam teşviklerinin tespiti, başvurusu ve takibinden iş hukuku müşavirliğine kadar tüm sosyal güvenlik süreçlerinizde yanınızdayız. Teşvikleri doğru ve eksiksiz uygulayarak prim maliyetlerinizi yasal çerçevede en aza indiririz.',
     items: [
-      { name: 'SGK İstihdam Teşvikleri', desc: 'Yararlanabileceğiniz tüm teşviklerin tespiti, başvurusu ve geriye dönük hak edişlerin kazanılması.' },
+      { name: 'SGK İstihdam Teşvikleri', desc: 'Yararlanabileceğiniz tüm teşviklerin tespiti, başvurusu ve eksiksiz şekilde uygulanması.' },
       { name: 'Sosyal Güvenlik Müşavirliği', desc: 'Bildirge, işe giriş–çıkış ve SGK mevzuat süreçlerinin profesyonel yönetimi.' },
       { name: 'SGK İnceleme Danışmanlığı', desc: 'SGK denetim ve inceleme süreçlerinde uzman temsil ve danışmanlık.' },
       { name: 'İstihdam Maliyet Yönetimi', desc: 'Personel maliyetlerinin analizi ve teşviklerle optimize edilmesi.' },
