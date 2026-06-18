@@ -222,8 +222,8 @@
 .hero__chip strong { display: block; font-family: var(--font-head); font-size: 1rem; line-height: 1.1; }
 .hero__chip em { font-style: normal; font-size: 0.76rem; color: var(--ink-500); }
 
-.hero__chip--1 { top: 6%; left: -2%; }
-.hero__chip--2 { bottom: 8%; right: -4%; animation-delay: 1.2s; }
+.hero__chip--1 { top: 6%; right: -2%; }
+.hero__chip--2 { bottom: 8%; left: -4%; animation-delay: 1.2s; }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -242,7 +242,7 @@
   .hero__trust { flex-wrap: wrap; gap: 16px; }
   .hero__trust-div { display: none; }
   .hero__trust > div { min-width: 88px; }
-  .hero__chip--1 { left: 0; top: 0; }
-  .hero__chip--2 { right: 0; bottom: 0; }
+  .hero__chip--1 { right: 0; top: 0; }
+  .hero__chip--2 { left: 0; bottom: 0; }
   .hero__actions .btn { flex: 1; }
 }

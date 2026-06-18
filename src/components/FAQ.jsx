@@ -3,12 +3,8 @@ import { IconPlus } from './Icons'
 import './FAQ.css'
 
 const faqs = [
-  {
-    q: 'SGK teşviklerinden geriye dönük yararlanabilir miyim?',
-    a: 'Evet. Mevzuat kapsamında, uygun olduğunuz teşvikler için geriye dönük 6 aya kadar düzeltme bildirgesi ile hak edişlerinizi geri kazandırabiliyoruz. Analiz sonrası net tutarı raporluyoruz.',
-  },
-  {
-    q: 'Hangi teşviklere uygun olduğumu nasıl öğrenirim?',
+   {
+    q: 'Hangi teşviklerden yararlanabileceğimi nasıl öğrenirim?',
     a: 'Ücretsiz ön analiz talebi oluşturmanız yeterli. Personel ve bordro yapınızı inceleyip yararlanabileceğiniz tüm teşvik türlerini ve tahmini avantajı çıkarıyoruz.',
   },
   {
