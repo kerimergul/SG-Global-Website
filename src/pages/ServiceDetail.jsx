@@ -87,7 +87,7 @@ export default function ServiceDetail() {
             <div className="svc-detail__card svc-detail__card--dark">
               <h4>Hızlı İletişim</h4>
               <p>Sorularınız için hemen bize ulaşın.</p>
-              <a href="tel:+902120000000" className="svc-detail__phone">+90 (212) 000 00 00</a>
+              <a href="tel:+905324451688" className="svc-detail__phone">+90 532 445 16 88</a>
               <Link to="/iletisim" className="btn btn--gold svc-detail__card-btn">Analiz Talep Et</Link>
             </div>
           </aside>

@@ -3,7 +3,7 @@ import { IconPhone, IconMail, IconPin, IconClock, IconCheck, IconArrow } from '.
 import './Contact.css'
 
 const info = [
-  { icon: IconPhone, label: 'Telefon', value: '+90 (212) 000 00 00', href: 'tel:+902120000000' },
+  { icon: IconPhone, label: 'Telefon', value: '+90 532 445 16 88', href: 'tel:+905324451688' },
   { icon: IconMail, label: 'E-posta', value: 'info@sgglobal.com.tr', href: 'mailto:info@sgglobal.com.tr' },
   { icon: IconPin, label: 'Adres', value: 'Kadıköy, İstanbul / Türkiye', href: null },
   { icon: IconClock, label: 'Çalışma Saatleri', value: 'Hafta içi 09:00 – 18:00', href: null },

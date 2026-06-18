@@ -11,20 +11,22 @@
   padding: 64px 24px 56px;
 }
 
-.footer__logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  background: #fff;
-  padding: 16px 20px;
-  border-radius: 16px;
-  box-shadow: var(--shadow-sm);
+.footer__brand-name {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
 }
-.footer__logo img {
-  height: 64px;
-  width: auto;
-  object-fit: contain;
+.footer__brand-name strong { color: var(--gold-400); font-weight: 800; }
+.footer__brand-name span {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
 }
 
 .footer__brand p { font-size: 0.94rem; max-width: 300px; margin-bottom: 22px; }

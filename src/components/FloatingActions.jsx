@@ -14,7 +14,7 @@ export default function FloatingActions() {
   return (
     <div className="fab">
       <a
-        href="https://wa.me/902120000000"
+        href="https://wa.me/905324451688"
         target="_blank"
         rel="noopener noreferrer"
         className="fab__wa"

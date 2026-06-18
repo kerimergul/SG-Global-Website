@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import { services } from '../data/services'
 import { IconLinkedin, IconWhatsapp, IconMail, IconPhone } from './Icons'
-import logo from '../assets/brand/logo-mark.png'
 import './Footer.css'
 
 export default function Footer() {
@@ -9,18 +8,18 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__top">
         <div className="footer__brand">
-          <Link to="/" className="footer__logo">
-            <img src={logo} alt="S&G Global Consultancy" />
-          </Link>
+          <p className="footer__brand-name">
+            S&amp;G <strong>Global</strong> <span>Consultancy</span>
+          </p>
           <p>
             SGK ve istihdam teşvikleri, vergi danışmanlığı, devlet destek &amp; hibeleri
             ve kurumsal eğitim hizmetleriyle işletmenizin yanındayız.
           </p>
           <div className="footer__social">
-            <a href="#" aria-label="LinkedIn"><IconLinkedin width={20} height={20} /></a>
-            <a href="https://wa.me/902120000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><IconWhatsapp width={20} height={20} /></a>
+            <a href="https://tr.linkedin.com/company/s-g-global-consultancy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><IconLinkedin width={20} height={20} /></a>
+            <a href="https://wa.me/905324451688" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><IconWhatsapp width={20} height={20} /></a>
             <a href="mailto:info@sgglobal.com.tr" aria-label="E-posta"><IconMail width={20} height={20} /></a>
-            <a href="tel:+902120000000" aria-label="Telefon"><IconPhone width={20} height={20} /></a>
+            <a href="tel:+905324451688" aria-label="Telefon"><IconPhone width={20} height={20} /></a>
           </div>
         </div>
 
@@ -46,7 +45,7 @@ export default function Footer() {
         <div className="footer__col footer__contact">
           <h4>İletişim</h4>
           <ul>
-            <li><a href="tel:+902120000000">+90 (212) 000 00 00</a></li>
+            <li><a href="tel:+905324451688">+90 532 445 16 88</a></li>
             <li><a href="mailto:info@sgglobal.com.tr">info@sgglobal.com.tr</a></li>
             <li>Kadıköy, İstanbul / Türkiye</li>
           </ul>
