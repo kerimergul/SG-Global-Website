@@ -223,7 +223,7 @@
 .hero__chip em { font-style: normal; font-size: 0.76rem; color: var(--ink-500); }
 
 .hero__chip--1 { top: -6%; left: -2%; }
-.hero__chip--2 { bottom: -13%; right: -4%; animation-delay: 1.2s; }
+.hero__chip--2 { bottom: -22%; right: -4%; animation-delay: 1.2s; }
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
