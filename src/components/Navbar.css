@@ -208,6 +208,13 @@
     transition: max-height 0.3s var(--ease), visibility 0.3s;
   }
   .nav__dropdown.is-open { visibility: visible; max-height: 520px; padding: 4px 0 8px 8px; }
+  /* iOS'ta dokunma :hover'ı tetikleyip masaüstü konumlandırmasını (translateX(-50%))
+     uyguluyor ve dropdown'ı soldan kesiyordu — mobilde hover konumlandırmasını sıfırla */
+  .has-sub:hover .nav__dropdown {
+    transform: none;
+    left: auto;
+    right: auto;
+  }
 
   .nav__menu .nav__cta--mobile { display: inline-flex; margin-top: 18px; }
 
