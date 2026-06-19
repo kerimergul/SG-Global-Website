@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-.eyebrow--light { color: var(--gold-400); }
+/* .eyebrow--light artık global olarak index.css'te tanımlı */
 
 .incentives__title {
   color: #fff;

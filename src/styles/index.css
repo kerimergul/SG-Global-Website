@@ -139,6 +139,10 @@ section {
   border-radius: 2px;
 }
 
+/* Koyu zemin varyantı — global tanım + yüksek özgüllük ile her sayfada
+   .eyebrow (blue-600) rengini ezer (koyu mavi zeminde okunabilir açık ton) */
+.eyebrow.eyebrow--light { color: var(--gold-400); }
+
 .section-head {
   max-width: 680px;
   margin-bottom: 56px;
